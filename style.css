@@ -177,3 +177,21 @@ a{
   width: 360px;
   padding-left: 1rem;
 }
+
+.doubleFlex{
+  display: flex;
+  margin: -0.5rem 0 0.5rem 0;
+}
+
+.doubleFlex img{
+  width: calc(50% - 0.5rem);
+}
+
+.doubleFlex img:first-child{
+  margin-right: 1rem;
+}
+
+.fullWidth{
+  width: 1200px;
+  margin: 0.5rem 0;
+}
