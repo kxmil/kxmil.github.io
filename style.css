@@ -93,7 +93,7 @@ a{
 
 .simpleColumn{
   width: 30%;
-  margin-left: 70%;
+  margin-left: calc(840px - 1rem);
 }
 
 .doubleColumn{
@@ -107,7 +107,7 @@ a{
 }
 
 .sectionHead h2:first-child{
-  width: 70%;
+  width: calc(840px - 1rem);
 }
 
 .sectionHead, .table div{
@@ -116,8 +116,8 @@ a{
 
 
 .table{
-  width: 60%;
-  margin-left: 40%;
+  width: calc(720px + 2rem);
+  margin-left: calc(480px - 2rem);
 }
 
 .table div{
@@ -133,7 +133,7 @@ a{
 
 .project{
   width: calc(100% - 2rem);
-  height: 60vh;
+  height: 420px;
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -142,11 +142,14 @@ a{
   display: flex;
 }
 
+.folio.project img{
+  width: 100%;
+}
 
 .project img{
   width: calc(840px - 3rem);
   margin-right: 1rem;
-  height: 60vh;
+  height: 420px;
 }
 
 .project p{
@@ -172,5 +175,5 @@ a{
 
 .projectHead p:last-child{
   width: 360px;
- padding-left: 1rem;
+  padding-left: 1rem;
 }
