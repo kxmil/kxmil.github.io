@@ -37,7 +37,7 @@ body{
 }
 
 h1{
-  margin: 0;
+  margin-top: 3rem;
   font-size: 4em;
 }
 
@@ -87,6 +87,10 @@ a{
   margin: auto;
 }
 
+.contact{
+  padding-bottom: 50vh;
+}
+
 .simpleColumn{
   width: 30%;
   margin-left: 70%;
@@ -128,6 +132,7 @@ a{
 }
 
 .project{
+  width: calc(100% - 2rem);
   height: 60vh;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -139,7 +144,7 @@ a{
 
 
 .project img{
-  width: calc(840px - 2rem);
+  width: calc(840px - 3rem);
   margin-right: 1rem;
   height: 60vh;
 }
@@ -150,7 +155,6 @@ a{
 }
 
 .projectHead{
-  width: calc(100% - 2rem);
   padding: 1rem;
   display: flex;
   margin-top: 2rem;
@@ -163,9 +167,10 @@ a{
 }
 
 .projectHead p:first-child{
-  width: calc(840px + 1rem);
+  width: calc(840px - 3rem);
 }
 
 .projectHead p:last-child{
   width: 360px;
+ padding-left: 1rem;
 }
