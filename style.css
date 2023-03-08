@@ -195,3 +195,19 @@ a{
   width: 1200px;
   margin: 0.5rem 0;
 }
+
+.longText{
+  margin-left:calc(840px - 1rem);
+}
+
+.project.chap, .project.chap img{
+  height: 610px;
+}
+
+.project.chap{
+  padding: 1rem 0;
+}
+
+.project.chap img{
+  width: calc(840px - 0rem);
+}
