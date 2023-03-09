@@ -180,7 +180,7 @@ a{
 
 .doubleFlex{
   display: flex;
-  margin: -0.5rem 0 0.5rem 0;
+  margin-bottom: 1rem;
 }
 
 .doubleFlex img{
@@ -193,7 +193,7 @@ a{
 
 .fullWidth{
   width: 1200px;
-  margin: 0.5rem 0;
+  margin-bottom: 1rem;
 }
 
 .longText{
@@ -205,9 +205,14 @@ a{
 }
 
 .project.chap{
-  padding: 1rem 0;
+  padding: 0;
+  margin-bottom: 1rem;
 }
 
 .project.chap img{
-  width: calc(840px - 0rem);
+  width: 840px;
+}
+
+#mnl .project.chap, #mnl .project.chap img{
+  height: 580px;
 }
