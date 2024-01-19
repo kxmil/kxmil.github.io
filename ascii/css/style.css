@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'morseregular';
+  src: url('../font/Braile_font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  display: flex;
+  background: #1d1d1d;
+  overflow: hidden;
+  font-family: "morseregular";
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.2;
+}
+
+pre {
+  position: absolute;
+  margin:0;
+  padding:0;
+  left:0;
+  top:0;
+  width:100vw;
+  height:100vh;
+  font-family: inherit;
+  z-index: -1;
+}
+
+/* about page */
+
+#about{
+  flex-direction: column;
+}
+
+#about p{
+  margin-left: 10px;
+}
+
+#about a{
+  color: rgb(77, 82, 255);
+}
+
+

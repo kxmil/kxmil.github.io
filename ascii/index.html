@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+    </body>
+    <!-- play.core -->
+    <script type="module">
+    import { run } from './ertd/run.js'
+    import * as program from './ertd/circle.js'
+    run(program, {
+        element : document.querySelector('pre')
+        }).then(function(e){
+        //console.log(e)
+        }).catch(function(e) {
+        console.warn(e.message)
+        console.log(e.error)
+    })
+    </script>
+</html>
