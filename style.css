@@ -6,18 +6,26 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
-  background: #cfcdbc !important;
-  color: #111;
+  background: #ececf1 !important;
+  color: #201c3e;
 }
 
 ::selection{
-  background: #111;
-  color: #cfcdbc;
+  background: #201c3e;
+  color: #ececf1;
+}
+
+.home svg {
+  fill: #201c3e;
 }
 
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+}
+
+h1 a {
+  text-decoration: none;
 }
 
 hr {
@@ -259,7 +267,7 @@ ul, ol, dl {
 
 .section h2, header.home h1 span.name {
   position: absolute;
-  background: #cfcdbc;
+  background: #ececf1;
 }
 
 main {
@@ -368,7 +376,7 @@ h1, h2, h3, h4, h5, h6, li, dt, dd, p {
 }
 
 header.home h1 span.name, a, :root {
-  color: #111;
+  color: #201c3e;
 }
 
 header.home h1 span.name, h1, h2, h3, h4, h5, h6, li, dt, dd, p {
@@ -503,7 +511,7 @@ header.home h1 span.name, h1, h2, h3, h4, h5, h6, li, dt, dd, p {
     border: initial;
   }
   .section h2 {
-    background: #cfcdbc;
+    background: #ececf1;
   }
   .lists .subsection-content ul {
     width: 100%;
@@ -587,8 +595,14 @@ header.home h1 {
   }
 }
 @media screen and (min-width: 1024px) {
-  header.home h1 {
-    font-size: 4rem;
+
+  header.flexsvg{
+    display: flex;
+    justify-content: center;
+  }
+
+  header.home svg {
+    width: 30vw;
   }
 }
 
@@ -601,8 +615,8 @@ abbr.normal {
 }
 
 a:hover, a:focus {
-  background:#111;
-  color: #cfcdbc;
+  background:#201c3e;
+  color: #ececf1;
 }
 a:focus {
   outline-offset: 0.1em;
