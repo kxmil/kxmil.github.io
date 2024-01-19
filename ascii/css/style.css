@@ -10,6 +10,8 @@ body{
   background: #1d1d1d;
   overflow: hidden;
   font-family: "morseregular";
+  letter-spacing: -2px;
+  text-shadow: #fff 1px 0 10px;
 }
 
 html, body {
