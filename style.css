@@ -594,6 +594,11 @@ header.home h1 {
     letter-spacing: -0.0275em;
   }
 }
+
+header.flexsvg{
+  margin: 20vh 0;
+}
+
 @media screen and (min-width: 1024px) {
 
   header.flexsvg{
