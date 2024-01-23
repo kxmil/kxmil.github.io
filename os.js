@@ -115,13 +115,12 @@ button.addEventListener("click", function() {
       homeSelectedContent.classList.toggle('selected');
     } else if (homeSelectedContent.textContent == "Work"){
       hide(home);
-      //display(work);
-      ipod.classList.remove('small');
-      screen.style.transition = "500ms"
-      currentDisplay = work;
-      screen.classList.add('full');
-      container.style.position = "initial";
-      container.style.transform = "initial"
+      display(work);
+      container.style.left = "-20%";
+      document.body.style.background = "#1d1d1d"
+      setTimeout(function(){
+        document.location="/ascii/"
+      }, 1000)
       homeSelectedContent.classList.toggle('selected');
     } else if (homeSelectedContent.textContent == "Playlists"){
       hide(home);
