@@ -16,6 +16,9 @@ contactCursor = 0;
 
 /* CONTENT VAR */
 var titleBar = document.querySelector('.title-bar'),
+ipod = document.querySelector('.ipod'),
+container = document.querySelector('.container'),
+screen = document.querySelector('.screen'),
 home = document.querySelector('.home'),
 about = document.querySelector('.about'),
 curriculum = document.querySelector('.curriculum'),
@@ -98,7 +101,6 @@ button.addEventListener("click", function() {
     }
   }
 
-
   if (home.style.display == "flex"){
     let homeSelectedContent = document.querySelector('.home .selected');
     if (homeSelectedContent.textContent == "About"){
@@ -113,8 +115,13 @@ button.addEventListener("click", function() {
       homeSelectedContent.classList.toggle('selected');
     } else if (homeSelectedContent.textContent == "Work"){
       hide(home);
-      display(work);
+      //display(work);
+      ipod.classList.remove('small');
+      screen.style.transition = "500ms"
       currentDisplay = work;
+      screen.classList.add('full');
+      container.style.position = "initial";
+      container.style.transform = "initial"
       homeSelectedContent.classList.toggle('selected');
     } else if (homeSelectedContent.textContent == "Playlists"){
       hide(home);
@@ -138,8 +145,8 @@ function hide(element){
 }
 setTimeout(function(){
   hide(document.querySelector('img'))
-}, 4000)
+}, 500)
 setTimeout(function(){
   display(titleBar);
   display(home);
-}, 4100)
+}, 600)
