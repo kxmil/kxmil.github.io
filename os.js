@@ -9,7 +9,10 @@ homeCursorWide = document.querySelectorAll('.home .option').length,
 homeCursor = 0,
 playlistsOptions = document.querySelectorAll('.playlists .option'),
 playlistsCursorWide = document.querySelectorAll('.playlists .option').length,
-playlistsCursor = 0;
+playlistsCursor = 0,
+contactOptions = document.querySelectorAll('.contact .option'),
+contactCursorWide = document.querySelectorAll('.contact .option').length,
+contactCursor = 0;
 
 /* CONTENT VAR */
 var titleBar = document.querySelector('.title-bar'),
@@ -28,6 +31,12 @@ skipForward.addEventListener("click", function() {
     playlistsOptions[playlistsCursor].classList.add('selected');
   }
 
+  if (contact.style.display == "flex"){
+    if (contactCursor < contactCursorWide - 1) {contactCursor += 1} else {contactCursor = 0}
+    document.querySelector('.contact .selected').classList.toggle('selected');
+    contactOptions[contactCursor].classList.add('selected');
+  }
+
   if (home.style.display == "flex"){
     if (homeCursor < homeCursorWide - 1) {homeCursor += 1} else {homeCursor = 0}
     document.querySelector('.home .selected').classList.toggle('selected');
@@ -36,6 +45,12 @@ skipForward.addEventListener("click", function() {
 });
 
 skipBack.addEventListener("click", function() {
+  if (contact.style.display == "flex"){
+    if (contactCursor > 0) {contactCursor -= 1} else {contactCursor = contactCursorWide - 1}
+    document.querySelector('.contact .selected').classList.toggle('selected');
+    contactOptions[contactCursor].classList.add('selected');
+  }
+
   if (playlists.style.display == "flex"){
     if (playlistsCursor > 0) {playlistsCursor -= 1} else {playlistsCursor = playlistsCursorWide - 1}
     document.querySelector('.playlists .selected').classList.toggle('selected');
@@ -69,6 +84,17 @@ button.addEventListener("click", function() {
       alert("playlist " + playlistsSelectedContent.textContent + " link")
     } else if (playlistsSelectedContent.textContent == "Rap Sofa Fusion"){
       alert("playlist " + playlistsSelectedContent.textContent + " link")
+    }
+  }
+
+  if (contact.style.display == "flex"){
+    let playlistsSelectedContent = document.querySelector('.contact .selected');
+    if (playlistsSelectedContent.textContent == "Mail"){
+      alert("contact " + playlistsSelectedContent.textContent + " link")
+    } else if (playlistsSelectedContent.textContent == "Direct Line"){
+      alert("contact" + playlistsSelectedContent.textContent + " link")
+    } else if (playlistsSelectedContent.textContent == "Instagram"){
+      alert("contact " + playlistsSelectedContent.textContent + " link")
     }
   }
 
