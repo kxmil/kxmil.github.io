@@ -6,6 +6,7 @@
 }
 body{
   overflow: hidden;
+  cursor: grab;
 }
 .centered {
   top: 50%;
@@ -269,6 +270,10 @@ _:-ms-lang(x),
   grid-template-columns: repeat(2, 1fr);
   transform: rotate(45deg);
 }
+
+#buttons:hover, .center-button:hover{
+  cursor: pointer;
+}
 #buttons div{
   width: 175px;
   height: 175px;
@@ -287,8 +292,9 @@ _:-ms-lang(x),
 }
 
 img{
-  width: 284px;
-  height: 230px;
+  width: 200px;
+  margin: 15px 42px;
+  height: 200px;
   animation-name: load;
   animation-duration: 4s;
 }
