@@ -120,6 +120,8 @@ button.addEventListener("click", function() {
       document.body.style.background = "#1d1d1d"
       setTimeout(function(){
         document.location="/ascii/"
+        container.style.left = "50%";
+        document.body.style.background = "#fff"
       }, 1000)
       homeSelectedContent.classList.toggle('selected');
     } else if (homeSelectedContent.textContent == "Playlists"){
