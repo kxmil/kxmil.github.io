@@ -17,10 +17,11 @@ fetch("https://raw.githubusercontent.com/blindman67/SimplexNoiseJS/master/simple
 // Stub function
 function noise3D() { return 0 }
 
-const density = 'eyes dontlies'
+const density = 'eyes dont lies'
 
 export function main(coord, context, cursor, buffer) {
-	const t = context.time * 0.0001
+  // Use cursor speed to determine time
+  const t = context.time * 0.00005
 	const s = 0.03
 	const x = coord.x * s
 	const y = coord.y * s / context.metrics.aspect + t
