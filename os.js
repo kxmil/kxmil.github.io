@@ -116,7 +116,7 @@ button.addEventListener("click", function() {
     } else if (homeSelectedContent.textContent == "Work"){
       hide(home);
       display(work);
-      container.style.left = "-20%";
+      container.style.left = "-50%";
       document.body.style.background = "#1d1d1d"
       setTimeout(function(){
         document.location="/ascii/"
